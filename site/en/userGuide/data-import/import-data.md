@@ -48,16 +48,16 @@ url = f"http://127.0.0.1:19530"
 resp = bulk_import(
     url=url,
     collection_name="quick_setup",
-    files=[['a1e18323-a658-4d1b-95a7-9907a4391bcf/1.parquet'],
-           ['a1e18323-a658-4d1b-95a7-9907a4391bcf/2.parquet'],
-           ['a1e18323-a658-4d1b-95a7-9907a4391bcf/3.parquet'],
-           ['a1e18323-a658-4d1b-95a7-9907a4391bcf/4.parquet'],
-           ['a1e18323-a658-4d1b-95a7-9907a4391bcf/5.parquet'],
-           ['a1e18323-a658-4d1b-95a7-9907a4391bcf/6.parquet'],
-           ['a1e18323-a658-4d1b-95a7-9907a4391bcf/7.parquet'],
-           ['a1e18323-a658-4d1b-95a7-9907a4391bcf/8.parquet'],
-           ['a1e18323-a658-4d1b-95a7-9907a4391bcf/9.parquet'],
-           ['a1e18323-a658-4d1b-95a7-9907a4391bcf/10.parquet']],
+    files=[['\\1.parquet'],
+           ['\\2.parquet'],
+           ['\\3.parquet'],
+           ['\\4.parquet'],
+           ['\\5.parquet'],
+           ['\\6.parquet'],
+           ['\\7.parquet'],
+           ['\\8.parquet'],
+           ['\\9.parquet'],
+           ['a\\10.parquet']],
 )
 
 job_id = resp.json()['data']['jobId']
